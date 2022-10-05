@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background: url(./assets/home/background-home-desktop.jpg) no-repeat;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    margin: 50px 0px 95px 0;
+}
+nav .logo{
+ margin-left: 20px;
+}
+
+nav .menu {
+    background: rgba(10, 10, 10, 0.5);
+    flex-grow: 0.5;
+
+}
+nav .menu ul{
+    display: flex;
+    flex-direction: row;
+   height: 100%;
+    align-items: center;
+    padding-left: 70px;
+    
+}
+nav .menu ul li{
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 400;
+    
+}
+
+
+/************MAIN SECTION STYLES******************/
+main{
+    display: grid;
+    grid-template-columns: 50% 30%;
+    justify-content: space-between;
+    margin: 10px 60px 10px 100px;
+}
+article{
+    
+
+}
+
+article div{
+    width: 80%;
+    margin: auto;
+}
+article h5{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    word-spacing: 4.75px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    color: hsl(231,77%, 90%);
+}
+article h2{
+    text-transform: uppercase;
+    font-size: 9rem;
+    font-weight: 400;
+    font-family: Bellefair, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 7;   
+
+}
+article p{
+    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: hsl(231, 77%, 90%);
+    font-family: Barlow, sans-serif;
+    word-spacing: 1.2;
+}
+aside{
+
+}
+aside .explore{
+    background-color: aliceblue;
+    color: black;
+    height: 250px;
+    width:250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .explore p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    
+}
