@@ -1,58 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-	<div class="wrapper">
-		<div class="left">Left</div>
-		<div class="grid">
-			<div class="one">
-				<img class="card-icon" src="images/icon-work.svg" alt="">
-				<div class="item-content">
-					Content
-				</div>
-			</div>
-			<div class="two">
-				<img class="card-icon" src="images/icon-play.svg" alt="">
-				<div class="item-content">
-					Content
-				</div>
-			</div>
-			<div class="three">
-				<img class="card-icon" src="images/icon-study.svg" alt="">
-				<div class="item-content">
-					Content
-				</div>
-			</div>
-			<div class="four">
-				<img class="card-icon" src="images/icon-exercise.svg" alt="">
-				<div class="item-content">
-					Content
-				</div>
-			</div>
-			<div class="five">
-				<img class="card-icon" src="images/icon-social.svg" alt="">
-				<div class="item-content">
-					Content
-				</div>
-			</div>
-			<div class="six">
-				<img class="card-icon" src="images/icon-self-care.svg" alt="">
-				<div class="item-content">
-					Content
-				</div>
-			</div>
-		</div>
-	</div>
-
-</body>
-
+  <body>
+    <div class="wrapper">
+      <div class="left">
+        <div class="profile">
+          <img src="./images/image-jeremy.png" alt="Profile image" />
+          <p>Report for</p>
+          <h2>Jeremy Robson</h2>
+        </div>
+        <div class="times">
+          <span id="period">Daily</span>
+          <span id="period" class="active">Weekly</span>
+          <span id="period">Monthly</span>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="one">
+          <img class="card-icon" src="images/icon-work.svg" alt="" />
+          <div class="item-content">
+            <div class="task-name">
+              <span>Work</span>
+              <span
+                ><img src="./images/icon-ellipsis.svg" alt="ellipsis"
+              /></span>
+            </div>
+            <div class="task-details">
+              <span class="hrs"> 32hrs </span>
+              <span class="prev-hrs"> Last week-36hrs </span>
+            </div>
+          </div>
+        </div>
+        <div class="two">
+          <img class="card-icon" src="images/icon-play.svg" alt="" />
+          <div class="item-content">
+            <div class="task-name">
+              <span>Play</span>
+              <span
+                ><img src="./images/icon-ellipsis.svg" alt="ellipsis"
+              /></span>
+            </div>
+            <div class="task-details">
+              <span class="hrs"> 10hrs </span>
+              <span class="prev-hrs"> Last week - 8hrs </span>
+            </div>
+          </div>
+        </div>
+        <div class="three">
+          <img class="card-icon" src="images/icon-study.svg" alt="" />
+          <div class="item-content">
+            <div class="task-name">
+              <span>Study</span>
+              <span
+                ><img src="./images/icon-ellipsis.svg" alt="ellipsis"
+              /></span>
+            </div>
+            <div class="task-details">
+              <span class="hrs"> 4hrs </span>
+              <span class="prev-hrs"> Last week - 7hrs </span>
+            </div>
+          </div>
+        </div>
+        <div class="four">
+          <img class="card-icon" src="images/icon-exercise.svg" alt="" />
+          <div class="item-content">
+            <div class="task-name">
+              <span>Exercise</span>
+              <span
+                ><img src="./images/icon-ellipsis.svg" alt="ellipsis"
+              /></span>
+            </div>
+            <div class="task-details">
+              <span class="hrs"> 4hrs </span>
+              <span class="prev-hrs"> Last week - 5hrs </span>
+            </div>
+          </div>
+        </div>
+        <div class="five">
+          <img class="card-icon" src="images/icon-social.svg" alt="" />
+          <div class="item-content">
+            <div class="task-name">
+              <span>Social</span>
+              <span
+                ><img src="./images/icon-ellipsis.svg" alt="ellipsis"
+              /></span>
+            </div>
+            <div class="task-details">
+              <span class="hrs"> 5hrs </span>
+              <span class="prev-hrs"> Last week - 10hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="six">
+          <img class="card-icon" src="images/icon-self-care.svg" alt="" />
+          <div class="item-content">
+            <div class="task-name">
+              <span>Self care</span>
+              <span
+                ><img src="./images/icon-ellipsis.svg" alt="ellipsis"
+              /></span>
+            </div>
+            <div class="task-details">
+              <span class="hrs"> 2hrs </span>
+              <span class="prev-hrs"> Last week - 2hrs </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
