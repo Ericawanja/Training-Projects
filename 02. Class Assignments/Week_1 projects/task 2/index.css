@@ -25,6 +25,10 @@ body {
   -moz-box-shadow: 0px 0px 33px -4px rgba(0, 0, 0, 0.44);
   box-shadow: 0px 0px 33px -4px rgba(0, 0, 0, 0.44);
 }
+.nav_container .active{
+  background-color: rgb(83, 83, 83);
+  color: aliceblue;
+}
 
 .fst_section {
   margin: 30px 0;
@@ -33,6 +37,7 @@ body {
 }
 .fst_section img {
   width: 90%;
+
 }
 
 .card {
@@ -54,11 +59,75 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
 }
 .side_divs p {
   font-weight: 600;
 }
-.side_divs button {
-   
+
+.side_divs button{
+  border: none;
+  display: inline;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  padding: 10px;
+  width: fit-content;
+}
+
+.last_section {
+  display: flex;
+
+  gap: 18px;
+}
+.last_section .card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.last_section .card .card_title {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+svg {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .last_section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fst_section {
+    grid-template-columns: 1fr;
+  }
+  .side_divs {
+    align-items: center;
+    margin-top: 20px;
+  }
+  .side_divs .card {
+    height: 150px;
+    width: 90%;
+  }
+  .company_image{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .nav_container {
+    grid-template-columns: 1fr;
+  }
+  .last_section {
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .last_section .card {
+    width: 90%;
+  }
 }
