@@ -38,7 +38,27 @@ body {
 }
 .fst_section img {
   width: 90%;
+  height: 350px;
+}
 
+.company_image {
+  position: relative;
+}
+.top_text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: aliceblue;
+}
+.top_text h2{
+font-size: 1.8rem;
+line-height: 1.5;
+}
+.top_text p {
+  line-height: 3;
+}
+.top_text button{
+  padding: 4px;
 }
 
 .card {
@@ -67,7 +87,7 @@ body {
   font-weight: 600;
 }
 
-.side_divs button{
+.side_divs button {
   border: none;
   display: inline;
   background-color: rgb(56, 56, 56);
@@ -115,7 +135,7 @@ svg {
     height: 150px;
     width: 90%;
   }
-  .company_image{
+  .company_image {
     display: flex;
     justify-content: center;
   }
@@ -124,7 +144,7 @@ svg {
   .nav_container {
     grid-template-columns: 1fr;
   }
-  .nav_container .active{
+  .nav_container .active {
     background-color: rgb(83, 83, 83);
     color: aliceblue;
   }
