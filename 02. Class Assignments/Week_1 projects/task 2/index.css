@@ -148,10 +148,11 @@ svg {
     background-color: rgb(83, 83, 83);
     color: aliceblue;
   }
-}
-
-@media screen and (max-width: 650px) {
   .last_section .card {
     width: 90%;
   }
+}
+
+@media screen and (max-width: 650px) {
+
 }
