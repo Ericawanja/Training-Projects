@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect, useState } from "react";
+import Icrement from "./Icrement";
+import Decrement from "./Decrement";
 
 function App() {
+  let [counter, setCounter] = useState(0);
+  let [status, setStatus] = useState('add')
+  let [increment, setIncrement] =useState(true)
+  let [decrement, setDecrement] = useState(false)
+  
+const handleDecreBtn=()=>{
+  setIncrement(false)
+  setDecrement(true)
+
+}
+const handleIncreBtn=()=>{
+  setIncrement(true)
+  setDecrement(false)
+
+}
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        {counter}
+        {increment && <Icrement setCounter={setCounter}/>}
+        {decrement && <Decrement setCounter={setCounter}/>}
+      </div>
+      <div className="counters">
+        
+      
+      <button onClick={handleIncreBtn}>Start incrementing</button>
+      <button onClick={handleDecreBtn}>Start decrementing</button>
+      </div>
     </div>
   );
 }
