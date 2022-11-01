@@ -1,10 +1,15 @@
-function checkPrint(num) {
-  //if (num % 3 !== 0 || num % 5 !== 0) console.log(num);
-  if (num % 3 === 0 && num % 5 === 0) console.log("FizzBuzz");
-  if (num % 5 === 0)  console.log("Buzz");
-  if (num % 3 === 0) console.log(`Fizz ${num}`);
-  num = num+1;
-  if (num <= 100) checkPrint(num);
+function print(num) {
+  function checkPrint(num) {
+    if (num % 3 != 0 || num % 5 != 0) return num;
+    if (num % 3 === 0 && num % 5 === 0) return "FizzBuzz";
+    if (num % 5 === 0) return "Buzz";
+    if (num % 3 === 0) return `Fizz ${num}`;
+  }
+  num++;
+  if (num <= 100) console.log(num); //(checkPrint(num));
+  else {
+    return;
+  }
 }
 
-checkPrint(1);
+print(0);
