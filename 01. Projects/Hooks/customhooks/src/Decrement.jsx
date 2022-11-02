@@ -1,24 +1,13 @@
-import React from "react";
-import { useEffect } from "react";
-import useCounterChange from "./UseCounterChange";
+import React from 'react'
+import useCounter from './UseCounter'
 
-function Decrement({ setCounter }) {
-    let action = 'minus'
-    useCounterChange (action, setCounter)
-//   let interval;
-//   const handleDecrement = () => {
-//     interval = setInterval(() => {
-//       setCounter((prev) => prev - 1);
-//     }, 1000);
-//   };
-//   useEffect(() => {
-//     handleDecrement();
-//     return () => {
-//       setCounter(0);
-//       clearInterval(interval);
-//     };
-//   }, []);
-  return <div>p</div>;
+function Decrement() {
+  let data= useCounter(-1)
+  return (
+    <div>
+      {data}
+    </div>
+  )
 }
 
-export default Decrement;
+export default Decrement
