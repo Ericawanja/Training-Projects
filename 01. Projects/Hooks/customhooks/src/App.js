@@ -1,15 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { useEffect, useState } from "react";
-import Icrement from "./Icrement";
-import Decrement from "./Decrement";
+import Todos from "./Components/Todos/todos";
+import CustomHooks from "./customHooks";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Decrement />
-      <Icrement />
-    </div>
+    <>
+    {/* <CustomHooks/> */}
+    <Todos/>
+    </>
   );
 }
 
